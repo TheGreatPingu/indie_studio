@@ -1,0 +1,52 @@
+//
+// Player.hpp for Indie Studio in /home/jeremy.perry/Rendu/B4-C++/cpp_indie_studio
+// 
+// Made by Jérémy Perry
+// Login   <jeremy.perry@epitech.net>
+// 
+// Started on  Sun Jun 18 12:31:51 2017 Jérémy Perry
+// Last update Sun Jun 18 19:15:25 2017 Jérémy Perry
+//
+
+#ifndef __PLAYER_HPP__
+# define __PLAYER_HPP__
+
+# include <string>
+# include "indie_studio.hpp"
+
+class		Player : virtual public Entity
+{
+private:
+  std::string	_name;
+  int		_wPosX;
+  int		_wPosY;
+  bool		_alive;
+  int		_fire;
+  int		_bombMax;
+  int		_bombUsed;
+  f32		_moveSpeed;
+  
+public:
+  Player(std::string name, int numero, int win_width, int win_height);
+  ~Player();
+
+  std::string	getName() const;
+  int		getWPosX() const;
+  void		addWPosX(int value);
+  void		addPosX(int value);
+  int		getWPosY() const;
+  void		addWPosY(int value);
+  void		addPosY(int value);
+  bool		isAlive() const;
+  void		death();
+  int		getFire() const;
+  void		addFire();
+  int		getBombMax() const;
+  void		addBombMax();
+  int		getBombUsed() const;
+  void		addBombUsed(int value);
+  f32		getMoveSpeed() const;
+  void		addMoveSpeed();
+};
+
+#endif /* !__PLAYER_HPP__ */

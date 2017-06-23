@@ -1,0 +1,3 @@
+/home/victor.thouin/cpp_indie_studio/CMakeFiles/edit_cache.dir
+/home/victor.thouin/cpp_indie_studio/CMakeFiles/rebuild_cache.dir
+/home/victor.thouin/cpp_indie_studio/CMakeFiles/indie_studio.dir

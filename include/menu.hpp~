@@ -1,0 +1,44 @@
+//
+// menu.hpp for menu in /home/victor.thouin/Projects/Indie/cpp_indie_studio/include
+// 
+// Made by Victor Thouin
+// Login   <victor.thouin@epitech.net>
+// 
+// Started on  Sun Jun 18 03:45:11 2017 Victor Thouin
+// Last update Sun Jun 18 04:53:15 2017 Victor Thouin
+//
+
+#ifdef _MENU_HPP_
+# define _MENU_HPP_
+
+#include <irrlicht.h>
+#include "driverChoice.h"
+
+using namespace irr;
+
+using namespace core;
+using namespace scene;
+using namespace video;
+using namespace io;
+using namespace gui;
+
+struct SAppContext
+{
+  IrrlichtDevice *device;
+  s32		 counter;
+  IGUIListBox*	listbox;
+};
+
+enum
+  {
+    GUI_ID_QUIT_BUTTON = 101,
+    
+  };
+
+class Menu : public IEventReceiver
+{
+public:
+  MyEventReceiver
+}
+  
+#endif /* !_MENU_HPP_*/
